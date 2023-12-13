@@ -1,0 +1,190 @@
+
+
+.register_form:hover{
+  color: var(--orange);
+  font-size: 12px;
+  font-weight: 500;
+}
+.user-logo{
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 18px;
+  color: var(--light);
+  background-color: var(--primaryitemcolor);
+  padding: 10px 0;
+  width: 50px;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header .user-form p {
+  font-size: 1.4rem;
+  color: var(--light-color);
+}
+.header .user-form p a {
+  color: var(--orange);
+}
+.header .user-form button:hover {
+  background: var(--orange);
+}
+
+.register_form {
+  cursor: pointer;
+  color: #007bff;
+  font-size: 8px
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root {
+  --orange: #ff7800;
+  --black: #130f40;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  --border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --outline-hover: 0.2rem solid var(--black);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  color: var(--black);
+  border: 0.2rem solid var(--black);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: var(--light);
+}
+.btn:hover {
+  color: var(--light);
+  background: var(--orange);
+}
+section,
+footer {
+  padding: 2rem 9%;
+}
+body {
+  background: #eee;
+}
+.login-heading{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 1.2;
+  color: var(--orange);
+}
+.heading {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--orange);
+  padding: 2rem 0 3rem 0;
+}
+.heading span {
+  background: var(--orange);
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem!important;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+  .heading{
+      font-size: 2.5rem;
+  }
+
+  .footer{
+      text-align: center;
+  }
+
+  .footer .box-container .box img{
+      margin: 2rem auto;
+  }
+
+}
+
+
+/* Add this CSS in your stylesheets or style tag */
+
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 80px 0px -3rem 0px;
+  background-image: url('../../../assets/images/banner-bg.webp');
+  background-size: cover;
+}
+
+.login-form,
+.register-form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 5px;
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input:hover{
+  outline: none !important;
+}
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--light);
+  color:var(--orange);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .auth-page {
+    margin-top: 20px;
+  }
+
+  .login-form,
+  .register-form {
+    width: 100%;
+  }
+}
