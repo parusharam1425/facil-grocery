@@ -20,7 +20,7 @@ const cartReducer = (state, action) => {
     const existingItemIndex = state.items.findIndex(
       (item) => item.id === action.item.id
     );
-    //END
+
 
     //Assigning the existing item variable to the existing variale in the cart, if there is no existing variabe, it's vaue will be null or false like said above
     const existingItem = state.items[existingItemIndex];

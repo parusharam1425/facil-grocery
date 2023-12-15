@@ -92,14 +92,10 @@ const TheNavbar = (props) => {
             <Nav.Link href="#buttons" className={`${classes.nav__link}`}>
               <NavCartButton onClick={props.onShowCart} />
             </Nav.Link>
-           
            <Link to="login">
            
             <UserLogo onClick={handleUserLogoClick} />
-           </Link>
-              
-
-          
+           </Link>   
           </Nav>
         </Navbar.Collapse>
       </Navbar>

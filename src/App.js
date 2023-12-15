@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-import TheNav from "./components/Header/TheNav";
-import Sections from "./components/Sections/Sections";
-import Cart from "./components/Cart/Cart";
-import CartProvider from "./components/store/CartProvider";
-import TheFooter from "./components/Footer/TheFooter";
+
+import {Routes,Route} from 'react-router-dom'
+// import TheNav from "./components/Header/TheNav";
+// import Sections from "./components/Sections/Sections";
+// import Cart from "./components/Cart/Cart";
+// import CartProvider from "./components/store/CartProvider";
+// import TheFooter from "./components/Footer/TheFooter";
 import Swal from "sweetalert2";
+import Payment from "./components/Payment/Payment";
+import PopUp from "./components/Payment/Popup/Popup";
+
 
 const App = () => {
-  //Using useState hook
   const [cartIsShown, setCartIsShown] = useState(false);
-  //END
 
   //Managing the state of the cart component using useState
   const onShowCartHandler = () => {
@@ -20,7 +23,7 @@ const App = () => {
     setCartIsShown(false);
     
   };
-  //END
+  // //END
 
   //EVent to occur on Order
   const onOrderHandler = () => {
@@ -37,14 +40,22 @@ const App = () => {
 
   //Rendering the cart and all the sections
   return (
-    <CartProvider>
+      <>
+    {/* <CartProvider>
       {cartIsShown && (
         <Cart onCloseCart={onCloseCartHandler} onOrder={onOrderHandler} />
       )}
       <TheNav onShowCart={onShowCartHandler} />
       <Sections />
       <TheFooter />
-    </CartProvider>
+    </CartProvider> */}
+    <Routes>
+      <Route path='/popup' element={<PopUp/>}/>
+    </Routes>
+
+<Payment />
+
+    </>
   );
   //END
 };
