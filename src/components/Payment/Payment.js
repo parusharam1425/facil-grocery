@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import classes from './Payment.module.css'
-import PopUp from './Popup/Popup';
 
 const Payment = () => {
   const [Cards, setCards] = useState(false);
