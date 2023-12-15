@@ -49,11 +49,13 @@ const App = () => {
       <Sections />
       <TheFooter />
     </CartProvider> */}
+<Payment/>
     <Routes>
+    
       <Route path='/popup' element={<PopUp/>}/>
+
     </Routes>
 
-<Payment />
 
     </>
   );
