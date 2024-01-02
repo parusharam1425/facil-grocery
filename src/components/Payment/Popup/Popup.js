@@ -8,7 +8,6 @@ import rupay from '../../../assets/Payment/rupay.jpg';
 import './Popup.css'
 const PopUp = () => {
   const [isPopupOpen, setPopupOpen] = useState(true);
-
   const [cardData, setCardData] = useState({
     cardNumber: '',
     nickname: '',
@@ -36,8 +35,6 @@ const PopUp = () => {
     <>
       {isPopupOpen && (
         <div className='container'>
-
-        
         <div className="card_container">
           <div className="card_header">
             <h1 style={{fontSize:"20px", fontWeight:"600"}}>Enter card details</h1>
@@ -62,8 +59,7 @@ const PopUp = () => {
                 />
               </div>
               <div className="popup_input_date">
-                <label className='label'>Expiry date</label>
-                
+                <label className='label'>Expiry date</label>           
                 <input
                   type='number'
                   className="date"
@@ -76,9 +72,7 @@ const PopUp = () => {
                 />
               </div>
             </div>
-            
               <div className='col-12 col-md-6'>
-
               <p className='p-3'>Please ensure that you enable your card for online payments from your bank's app</p>
               <div className="cards_img">
                 <img src={visa} alt='' />

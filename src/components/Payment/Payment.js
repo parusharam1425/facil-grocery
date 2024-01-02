@@ -34,7 +34,6 @@ const Payment = () => {
   }
   return (
     <>
-
       <div>
         <div className={classes.main_container}>
           <h1>
@@ -49,7 +48,6 @@ const Payment = () => {
             Another Payment Method
           </h1>
           <hr />
-
           <div className="form-check">
             <input
               className="form-check-input p-2"
@@ -62,21 +60,15 @@ const Payment = () => {
               Credit card or debit card
             </label>
           </div>
-
           {Cards === 'creditDebit' && (
             <div>
               <Link to='/popup'>
-              
               <p htmlFor="additionalInfo"> + Enter Card Details </p>
               </Link>
-             
             </div>
           )}
-        
-
         {/* add some debit  or credit cards */}
         {/* <img /> */}
-
         <div className="form-check">
           <input
             className="form-check-input p-2"
@@ -99,8 +91,6 @@ const Payment = () => {
             )}
           </div>
         </div>
-
-
         <div class="form-check">
           <input
             className="form-check-input p-2"
@@ -113,7 +103,6 @@ const Payment = () => {
             Other UPI Apps
           </label>
         </div>
-
         {upiApp && (
           <div>
             <p htmlFor="additionalInfo"> Please Enter your  UPI ID </p>
@@ -121,11 +110,8 @@ const Payment = () => {
               placeholder='Enter UPI ID'
             />
             <button className={classes.button}>Verify</button>
-
           </div>
         )}
-
-
         <div class="form-check">
           <input class="form-check-input p-2" type="radio" name="flexRadioDefault" id="flexRadioDefault4"
             onChange={handleCashOnDelivery}
@@ -135,13 +121,9 @@ const Payment = () => {
             <br></br>
             <p >Cash, UPI and Cards accepted. <span className={classes.span}>Know More</span></p>
           </label>
-
         </div>
-
       </div>
       </div>
-
-
     </>
   )
 }
